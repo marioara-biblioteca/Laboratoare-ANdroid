@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".CreareObiecteActivity">
+
+
+    <TextView
+        android:id="@+id/titlu"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Introduceti date acvariu"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/material"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Introduceti material"
+        android:inputType="textPersonName"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textAlignment="center" />
+
+
+    <RadioButton
+        android:id="@+id/curatare"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Trebuie curatat" />
+
+    <Spinner
+        android:id="@+id/capacitate"
+        android:layout_width="match_parent"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_height="wrap_content" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="match_parent"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_height="wrap_content" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Switch" />
+    <CheckBox
+        android:id="@+id/pesteAuriu"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Pestisor auriu" />
+
+    <CheckBox
+        android:id="@+id/pesteClaun"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Peste clown" />
+    <CheckBox
+        android:id="@+id/pesteCoral"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Peste coral" />
+
+    <Button
+        android:id="@+id/trimite"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Submit" />
+</LinearLayout>
