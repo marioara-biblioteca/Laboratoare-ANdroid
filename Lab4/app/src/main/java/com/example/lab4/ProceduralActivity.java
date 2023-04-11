@@ -2,15 +2,15 @@ package com.example.lab4;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.*;
 import android.widget.*;
 
-import java.lang.reflect.Array;
+import com.example.lab4.lab6.ACVariu;
+import com.example.lab4.lab6.Peste;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 //am setat in manifest ca aplicatia sa porneasca cu aceasta activitate

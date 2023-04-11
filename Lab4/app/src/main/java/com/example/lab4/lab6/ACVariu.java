@@ -1,4 +1,11 @@
-package com.example.lab4;
+package com.example.lab4.lab6;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import androidx.annotation.NonNull;
+
+import com.example.lab4.lab6.Peste;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -10,6 +17,23 @@ public class ACVariu implements Serializable {
     private float lungime,latime,inaltime;
     private boolean trebuieSpalat;
     private int capacitatePesti;
+    private int imagine;
+
+    public ACVariu() {
+    }
+
+    public ACVariu(String material, int imagine) {
+        this.material = material;
+        this.imagine = imagine;
+    }
+
+    public int getImagine() {
+        return imagine;
+    }
+
+    public void setImagine(int imagine) {
+        this.imagine = imagine;
+    }
 
     public ACVariu(float lungime, float latime, float inaltime) {
         this.lungime = lungime;
@@ -85,4 +109,6 @@ public class ACVariu implements Serializable {
                 ", capacitatePesti=" + capacitatePesti +
                 '}';
     }
+
+
 }

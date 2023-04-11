@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/creareObjLayout"
     android:orientation="vertical"
     android:gravity="center_horizontal"
     tools:context=".CreareObiecteActivity">
@@ -13,8 +14,6 @@
         android:id="@+id/titlu"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
         android:text="Introduceti date acvariu"
         android:textAlignment="center" />
 
@@ -25,11 +24,7 @@
         android:ems="10"
         android:hint="Introduceti material"
         android:inputType="textPersonName"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
         android:textAlignment="center" />
-
-
     <RadioButton
         android:id="@+id/curatare"
         android:layout_width="200dp"
@@ -41,16 +36,14 @@
     <Spinner
         android:id="@+id/capacitate"
         android:layout_width="match_parent"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
         android:layout_height="wrap_content" />
 
-    <RatingBar
-        android:id="@+id/ratingBar"
-        android:layout_width="match_parent"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:layout_height="wrap_content" />
+<!--    <RatingBar-->
+<!--        android:id="@+id/ratingBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:paddingTop="20dp"-->
+<!--        android:paddingBottom="20dp"-->
+<!--        android:layout_height="wrap_content" />-->
 
     <Switch
         android:id="@+id/switch1"
@@ -59,12 +52,14 @@
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
         android:text="Switch" />
+    <LinearLayout
+       android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
     <CheckBox
         android:id="@+id/pesteAuriu"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
         android:text="Pestisor auriu" />
 
     <CheckBox
@@ -77,12 +72,17 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Peste coral" />
+    </LinearLayout>
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
 
     <Button
         android:id="@+id/trimite"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:text="Submit" />
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:text="Submit"
+        android:textSize="10sp" />
 </LinearLayout>

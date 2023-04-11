@@ -15,13 +15,20 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".CreareObiecteActivity"
+            android:name=".lab6.AcvariuActivity"
             android:exported="false" />
         <activity
             android:name=".ProceduralActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreareObiecteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SPActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
