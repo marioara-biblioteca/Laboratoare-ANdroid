@@ -7,7 +7,7 @@
     android:layout_gravity="center"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".acvariu.MainActivity">
 
     <Button
         android:id="@+id/button"
@@ -34,12 +34,7 @@
         android:text="@string/insert"
         android:onClick="insertMethod"/>
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Delete"
-        android:onClick="deleteMethod"/>
+
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
@@ -52,5 +47,25 @@
         android:layout_height="wrap_content"
         android:text="Update One"
         android:onClick="updateOneMethod"/>
+
+    <EditText
+        android:id="@+id/material"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Material" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>
